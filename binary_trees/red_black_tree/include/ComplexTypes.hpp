@@ -36,4 +36,11 @@ namespace ComplexTypes
 		std::shared_ptr<ComplexTypes::TreeNode> left;
 		std::shared_ptr<ComplexTypes::TreeNode> right;
 	};
+
+	struct Node final
+	{
+		bool isAlreadyStored;
+		std::shared_ptr<ComplexTypes::TreeNode> treeNode;
+		std::shared_ptr<ComplexTypes::Node> next;
+	};
 }

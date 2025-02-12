@@ -520,7 +520,7 @@ namespace AVLBinaryTree
         node = nodeRightLeft;
     }
 
-    // Time complexity -> o(n)
+    // Time complexity -> o(logn)
     // Space complexity -> o(1)
     std::shared_ptr<ComplexTypes::AVLTreeNode> AVLTree::InorderPrecessor(const std::shared_ptr<ComplexTypes::AVLTreeNode>& node) const
     {
@@ -534,7 +534,7 @@ namespace AVLBinaryTree
         return precessor;
     }
 
-    // Time complexity -> o(n)
+    // Time complexity -> o(logn)
     // Space complexity -> o(1)
     std::shared_ptr<ComplexTypes::AVLTreeNode> AVLTree::InorderSuccessor(const std::shared_ptr<ComplexTypes::AVLTreeNode>& node) const
     {

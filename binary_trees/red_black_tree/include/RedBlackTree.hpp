@@ -42,5 +42,8 @@ namespace RedBlackTree
             void RLRotation(std::shared_ptr<ComplexTypes::TreeNode>& node);
 
             void UncleRedRepaintNodes(std::shared_ptr<ComplexTypes::TreeNode>& node);
+
+            [[nodiscard]] std::shared_ptr<ComplexTypes::TreeNode> InorderPrecessor(const std::shared_ptr<ComplexTypes::TreeNode>& node) const;
+            [[nodiscard]] std::shared_ptr<ComplexTypes::TreeNode> InorderSucessor(const std::shared_ptr<ComplexTypes::TreeNode>& node) const;
     };
 }
