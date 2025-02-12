@@ -4,14 +4,14 @@ namespace ChainHashing
 {
     // Time complexity -> o(1)
     // Space complexity -> o(1) - technically we do allocate n = size shared pointers to Nodes
-    Hash::Hash(const int size) : hashSize(size)
+    Hash::Hash(const unsigned int size) : hashSize(size)
     {
         hashMap = std::make_unique<std::shared_ptr<Node>[]>(hashSize);
     }
 
     // Implements open hashing techinque -> chaining (usage of linked lists)
-    // Loading factor lambda = n / hashSize, n -> number of keys
-    // we are assuming that the keys are uniformely distributed with the factor lambda
+    // Loading factor lambda = n / hashSize, n -> number of values
+    // we are assuming that the keys are uniformly distributed with the factor lambda
     // 
     // Time complexity -> o(1 + lambda)
     // Space complexity -> o(1)
@@ -44,8 +44,8 @@ namespace ChainHashing
 
     }
 
-    // Loading factor lambda = n / hashSize, n -> number of keys
-    // we are assuming that the keys are uniformely distributed with the factor lambda
+    // Loading factor lambda = n / hashSize, n -> number of values
+    // we are assuming that the keys are uniformly distributed with the factor lambda
     // 
     // Time complexity -> avg. successfull delete -> t = 1 + lambda/2 -> o(t)
     //                 -> avg. unsuccessfull delete -> t = 1 + lambda -> o(t)
@@ -83,8 +83,8 @@ namespace ChainHashing
         return deletedData;
     }
 
-    // Loading factor lambda = n / hashSize, n -> number of keys
-    // we are assuming that the keys are uniformely distributed with the factor lambda
+    // Loading factor lambda = n / hashSize, n -> number of values
+    // we are assuming that the keys are uniformly distributed with the factor lambda
     // 
     // Time complexity -> avg. successfull search -> t = 1 + lambda/2 -> o(t)
     //                 -> avg. unsuccessfull search -> t = 1 + lambda -> o(t)
