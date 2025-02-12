@@ -58,5 +58,5 @@ Example of double hashing:
     h1(x) = x % 10
     h2(x) = R - (x % R), R is a primary number smaller than size of hash table
 
-    h'(x) = [h1(x) + i * h2(x)] % 10, i = 0, 1, 2, ...
+    h'(x) = [h1(x) + i * h2(x)] % 10, i = 0, 1, 2, ... -> increments with each collision
 ```
