@@ -13,30 +13,14 @@ Resources::
 
 Prerequisite is to have g++ with the c++20 standard installed and CMake with minum version 3.15.
 
-Build exercises with the following command:
+Build standalone examples (without cmake) with the following command:
 ```
 g++ -std=c++20 -o <exercise_name>.exe exercises/<exercise_name>.cpp
 ```
 
-Build design_pattern_exercises with the following commands:
+Build cmake examples with the following commands:
 ```
-cd tdd_exercicses\<Exercise_folder>
-mkdir build 
-cd build
-cmake ..
-```
-
-Build tdd_exercices with the following commands:
-```
-cd tdd_exercicses\<Exercise_folder>
-mkdir build 
-cd build
-cmake ..
-```
-
-Build tdd_exercices unit tests with the following commands:
-```
-cd tdd_exercicses\<Exercise_folder>\tests
+cd <module_folder>\<example_folder>
 mkdir build 
 cd build
 cmake ..
