@@ -1,5 +1,15 @@
 # Algorithms
 
+## Criteria for analysing sorting algorithms
+
+The following are the criteria for analysing sorting algorithms:
+1. Number of comparisons 
+2. Number of swaps
+3. Adaptive - the algorithm takes less time if the data is already sorted
+4. Stable - means that the data is sorted based on the multiple parameters (e.g. name, grade), and the data will keep order
+if any duplicates
+5. Extra memory - determines if the algorithm takes extra memory for its execution
+
 ## Asymptotic notations
 
 Asymptotic notations are used as a metric to describe the efficiency of algorithms.

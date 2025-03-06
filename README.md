@@ -13,14 +13,14 @@ Resources::
 
 Prerequisite is to have g++ with the c++20 standard installed and CMake with minum version 3.15.
 
-Build standalone examples (without cmake) with the following command:
+Build exercises with the following command:
 ```
-g++ -std=c++20 -o <exercise_name>.exe exercises/<exercise_name>.cpp
+g++ -std=c++20 -o <exercise_name>.exe <exercise_folder>/<exercise_name>.cpp
 ```
 
-Build cmake examples with the following commands:
+Build exercises that require cmake with the following commands:
 ```
-cd <module_folder>\<example_folder>
+cd ./<Exercise_folder>/
 mkdir build 
 cd build
 cmake ..
