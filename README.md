@@ -11,7 +11,7 @@ Resources::
 
 ### Build Instructions
 
-Prerequisite is to have g++ with the c++20 standard installed and CMake with minum version 3.15.
+Prerequisite is to have g++ with the c++20 standard installed and CMake with minimum version 3.15.
 
 Build exercises with the following command:
 ```
