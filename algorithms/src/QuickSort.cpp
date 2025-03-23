@@ -10,7 +10,7 @@ namespace SortingAlgorithms
         if (low < high)
         {
             highIdx = partition(vec, low, high);
-            recursiveQuickSortAlg(vec, low, highIdx);
+            recursiveQuickSortAlg(vec, low, highIdx - 1);
             recursiveQuickSortAlg(vec, highIdx + 1L, high);
         }
     }
