@@ -5,19 +5,19 @@ namespace SortingAlgorithms
 	void MergeSort::Merge(std::vector<int>& vec, const int low, const int mid, const int high) const
 	{
 		std::vector<int> mergeVector;
-        int i = low;
-        int j = mid + 1L;
-
-        while(i <= mid && j <= high)
-        {
-            if(vec[i] < vec[j]) mergeVector.emplace_back(vec[i++]);
-            else mergeVector.emplace_back(vec[j++]);
-        }
-
-        for(; i <= mid; ++i) mergeVector.emplace_back(vec[i]);
-        for(; j <= high; ++j) mergeVector.emplace_back(vec[j]);
-
-        for(int k = low, l = 0; k <= high; ++k, ++l) vec[k] = mergeVector[l];
+	        int i = low;
+	        int j = mid + 1L;
+	
+	        while(i <= mid && j <= high)
+	        {
+	            if(vec[i] < vec[j]) mergeVector.emplace_back(vec[i++]);
+	            else mergeVector.emplace_back(vec[j++]);
+	        }
+	
+	        for(; i <= mid; ++i) mergeVector.emplace_back(vec[i]);
+	        for(; j <= high; ++j) mergeVector.emplace_back(vec[j]);
+	
+	        for(int k = low, l = 0; k <= high; ++k, ++l) vec[k] = mergeVector[l];
 	}
 
 	void MergeSort::Partition(std::vector<int>& vec, const int low, const int high) const
