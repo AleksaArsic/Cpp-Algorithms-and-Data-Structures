@@ -45,7 +45,7 @@ namespace SortingAlgorithms
 		int divisor = 1L;
 		int bucketIdx = INT_MIN;
 
-		while (divisor < maxElement)
+		while (divisor <= maxElement)
 		{
 			std::vector<std::shared_ptr<Node>> buckets(10L);
 
